@@ -44,7 +44,7 @@ public class MemorizationGame {
 	
 	public boolean answer(){
 		System.out.println("\n");
-		System.out.print("´äÀ» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë‹µì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		//int n=0;
 		double yourAnswer = input.nextDouble();
 		double myAnswer = realAnswer(val);
@@ -53,13 +53,13 @@ public class MemorizationGame {
 			//	n ++;
 			//}
 		if(myAnswer == yourAnswer){
-			System.out.println("¸Â¾Ò½À´Ï´Ù");
+			System.out.println("ë§ì•˜ìŠµë‹ˆë‹¤");
 			return true;
 		}
 		else{
 			//System.out.printf("my:%.0f\n",myAnswer);
 			//System.out.printf("your:%.0f\n",yourAnswer);
-			System.out.println("Æ²·È½À´Ï´Ù");
+			System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤");
 			return false;
 		}
 		
