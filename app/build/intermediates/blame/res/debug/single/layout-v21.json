@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]
