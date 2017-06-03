@@ -3,4 +3,8 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#ff457d</color>
     <color name="colorAccent">#4c4373</color>
+    <color name="colorButton">#33181b</color>
+    <color name="colorButtonBackground">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

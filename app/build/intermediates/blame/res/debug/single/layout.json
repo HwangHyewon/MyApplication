@@ -44,6 +44,10 @@
         "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
         "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "C:\\Users\\Hwang Hyewon\\.android\\build-cache\\c73cfc30689cd901f74e031307315cff66c7b14d\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },

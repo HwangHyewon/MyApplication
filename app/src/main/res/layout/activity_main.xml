@@ -7,53 +7,33 @@
     tools:context="com.example.hwanghyewon.myapplication.MainActivity">
 
 
-    <TextView
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical"
+        app:srcCompat="@drawable/number"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="132dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/button3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="SRART NUMERIC GAME!"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        android:text="START"
+        android:foregroundGravity="top|center"
+        android:background="@color/colorButtonBackground"
+        android:textColor="@color/colorButton"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteY="84dp"
+        tools:layout_editor_absoluteX="148dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="160dp"
-        android:layout_height="198dp"
-        android:layout_gravity="center|bottom"
-        app:srcCompat="@drawable/num2"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="297dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="104dp"
-        android:layout_height="155dp"
-        app:srcCompat="@drawable/num1"
-        android:layout_gravity="center|bottom"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="325dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="167dp"
-        android:layout_height="156dp"
-        app:srcCompat="@drawable/num3"
-        android:layout_gravity="left|bottom"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="185dp" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="133dp"
-        android:layout_height="162dp"
-        android:layout_gravity="right|bottom"
-        app:srcCompat="@drawable/num4"
-        tools:layout_editor_absoluteY="283dp"
-        tools:layout_editor_absoluteX="235dp" />
 
 </android.support.constraint.ConstraintLayout>

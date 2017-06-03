@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
@@ -14,17 +14,17 @@ ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\Andr
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:5:5-20:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hwang Hyewon\.android\build-cache\b834ea0c229c535ed6ad7dcc52ac2d0e77c4b480\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a926dd1f06c7376158324a3aa1621763fbb06613\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\ad10bf64ddfaa69e08d39b9c62629533136eb95b\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\71b2db18024075720fceee017456a4d200c9750f\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\67205f24ef441a0ebd445bba50dfb70fdce0d7ec\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\73a6778633ccc05bc57977d09376c161fbafde12\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a5bbcc138d9a59c0e4839aecbee93d6a0ea971dc\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hwang Hyewon\.android\build-cache\b834ea0c229c535ed6ad7dcc52ac2d0e77c4b480\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -51,18 +51,22 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.example.hwanghyewon.myapplication.Main2Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:9-51
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:19-48
 uses-sdk
 INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hwang Hyewon\.android\build-cache\b834ea0c229c535ed6ad7dcc52ac2d0e77c4b480\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a926dd1f06c7376158324a3aa1621763fbb06613\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\ad10bf64ddfaa69e08d39b9c62629533136eb95b\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\71b2db18024075720fceee017456a4d200c9750f\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\67205f24ef441a0ebd445bba50dfb70fdce0d7ec\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\73a6778633ccc05bc57977d09376c161fbafde12\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a5bbcc138d9a59c0e4839aecbee93d6a0ea971dc\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hwang Hyewon\.android\build-cache\b834ea0c229c535ed6ad7dcc52ac2d0e77c4b480\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -73,13 +77,13 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hw
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a926dd1f06c7376158324a3aa1621763fbb06613\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\ad10bf64ddfaa69e08d39b9c62629533136eb95b\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\71b2db18024075720fceee017456a4d200c9750f\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\67205f24ef441a0ebd445bba50dfb70fdce0d7ec\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\73a6778633ccc05bc57977d09376c161fbafde12\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\a5bbcc138d9a59c0e4839aecbee93d6a0ea971dc\output\AndroidManifest.xml:25:5-27:34
 	android:value
 		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:27:9-31
