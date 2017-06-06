@@ -6,5 +6,16 @@
     <color name="colorButton">#33181b</color>
     <color name="colorButtonBackground">#ffffff</color>
 
+    <color name="colorRandomText">#02000d</color>
+
+    <color name="colorLevel1Button">#ff423b</color>
+    <color name="colorLevel2Button">#fed45f</color>
+    <color name="colorLevel3Button">#d4fc83</color>
+    <color name="colorLevel4Button">#b4e7ec</color>
+    <color name="colorLevel5Button">#7f9ef4</color>
+    <color name="colorLevel6Button">#e77df7</color>
+
+    <color name="colorLevel6ButtonBacground">#e77df7</color>
+
     <color name="black_overlay">#66000000</color>
 </resources>

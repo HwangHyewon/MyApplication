@@ -26,7 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.hwanghyewon.myapplication.Main2Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level3Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.ButtonActivity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level2Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level1Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level4Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level5Activity" />
+        <activity android:name="com.example.hwanghyewon.myapplication.Level6Activity" />
     </application>
 
 </manifest>

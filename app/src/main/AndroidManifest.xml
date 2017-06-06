@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Level3Activity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".Level2Activity" />
+        <activity android:name=".Level1Activity" />
+        <activity android:name=".Level4Activity" />
+        <activity android:name=".Level5Activity" />
+        <activity android:name=".Level6Activity" />
     </application>
 
 </manifest>

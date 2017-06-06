@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\Andr
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\0c205c263c474711008970873e21161ae7bb0ca4\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\f0d0bf9fea197beb21e6e6bbbec221d465d6e9d3\output\AndroidManifest.xml:26:5-20
@@ -51,10 +51,34 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:16:27-74
-activity#com.example.hwanghyewon.myapplication.Main2Activity
-ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:9-51
+activity#com.example.hwanghyewon.myapplication.Level3Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:9-52
 	android:name
-		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:19:19-49
+activity#com.example.hwanghyewon.myapplication.ButtonActivity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:20:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:20:19-49
+activity#com.example.hwanghyewon.myapplication.Level2Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:21:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:21:19-49
+activity#com.example.hwanghyewon.myapplication.Level1Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:22:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:22:19-49
+activity#com.example.hwanghyewon.myapplication.Level4Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:23:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:23:19-49
+activity#com.example.hwanghyewon.myapplication.Level5Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:24:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:24:19-49
+activity#com.example.hwanghyewon.myapplication.Level6Activity
+ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml:25:19-49
 uses-sdk
 INJECTED from C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Hwang Hyewon\.android\build-cache\c73cfc30689cd901f74e031307315cff66c7b14d\output\AndroidManifest.xml:21:5-23:78
