@@ -6,30 +6,33 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1498223966818"
+    timestamp="1498325016707"
     token="1389397321432228040"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="4602" />
+        duration="3807" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="369" />
+        duration="206" />
     <task
         name="verifier"
-        duration="50" />
+        duration="24" />
 
     <artifact
         location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1498214061254"
+        timestamp="1498322188408"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -70,19 +73,14 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1498221659010"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1498223966818"
+        timestamp="1498325016707"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

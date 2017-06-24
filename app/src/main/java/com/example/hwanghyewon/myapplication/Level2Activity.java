@@ -1,61 +1,117 @@
 package com.example.hwanghyewon.myapplication;
 
+import android.content.Intent;
 import android.os.Handler;
-import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
-
-import java.util.Random;
+import android.widget.Toast;
 
 import static android.graphics.Color.BLACK;
-import static android.graphics.Color.RED;
 import static android.graphics.Color.WHITE;
 
-public class Level2Activity extends AppCompatActivity {
-    TextView textView;
+public class Level2Activity extends MemorizationGame{
+
+    private TextView textView;
+    private EditText editText;
+    private Handler mHandler;
+    private int realAnswer;
+    private int answer;
+    private int score = 5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level2);
+        setContentView(R.layout.activity_level1);
 
         textView = (TextView) findViewById(R.id.textView);
-        textView.setText(Integer.toString(makeRandomText()));
+        editText = (EditText) findViewById(R.id.editText);
+
+        realAnswer = makeRandomText(4);
+        textView.setText(Integer.toString(realAnswer));
+        mHandler = new Handler();
+
         mHandler.sendEmptyMessage(0);
 
-        mHandler.postDelayed(runnable,5000);
-    }
+        mHandler.postDelayed(runnable,2000);
+        mHandler.postDelayed(runnable2,5000);
 
-    //5초뒤에 글자가 안보이게 한다.
-    Handler mHandler = new Handler();
+        mHandler.postDelayed(runnable,7000);
+        mHandler.postDelayed(runnable2,11000);
+
+        mHandler.postDelayed(runnable,13000);
+        mHandler.postDelayed(runnable2,17000);
+
+        mHandler.postDelayed(runnable,19000);
+        mHandler.postDelayed(runnable2,23000);
+
+        mHandler.postDelayed(runnable,25000);
+        mHandler.postDelayed(runnable3,29000);
+
+    };
+
+
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
             textView.setTextColor(WHITE);
-            mHandler.sendEmptyMessageDelayed(0,5000);
+        };
+    };
 
-            };
+    Runnable runnable2 = new Runnable() {
+        @Override
+        public void run() {
+            compareAnswer(2);
+            realAnswer = makeRandomText(4);
+            textView.setText(Integer.toString(realAnswer));
+            textView.setTextColor(BLACK);
+        }
+    };
+    Runnable runnable3 = new Runnable() {
+        @Override
+        public void run() {
+            compareAnswer(2);
 
+            if(score<10){
+                String val = Integer.toString(score);
+                Toast.makeText(getApplicationContext(),"L O S E!\nYour Score: "+val,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        ButtonActivity.class); // 다음 넘어갈 클래스 지정
+                startActivity(intent);
+            }
+            else{
+                String val = Integer.toString(score);
+                Toast.makeText(getApplicationContext(),"S U C C E S S E !\nYour Score: "+val,Toast.LENGTH_LONG).show();
+                Intent intent2 = new Intent(
+                        getApplicationContext(),
+                        Level3Activity.class); // 다음 넘어갈 클래스 지정
+                startActivity(intent2);
+            }
+        }
     };
 
 
-    public int makeRandomText() {
-        Random random = new Random();
-
-        double val[];
-        double realAnswer = 0;
-        val = new double[4];
-
-        for (int i = 0; i < 4; i++) {
-            int scan = random.nextInt(10);
-            val[i] = scan;
+    public int compareAnswer(int level) {
+        if (editText.getText().toString().equals("")) {
+            Toast.makeText(getApplicationContext(), "입력시간이 지났습니다", Toast.LENGTH_SHORT).show();
+            return 0;
+        } else {
+            answer = Integer.parseInt(editText.getText().toString());
+            if (answer == realAnswer) {
+                score++;
+                if (score != level * 5) {
+                    String val = Integer.toString(score);
+                    Toast.makeText(getApplicationContext(), "맞았습니다\nCurrent Score: " + val, Toast.LENGTH_SHORT).show();
+                }
+                return 1;
+            } else {
+                String val = Integer.toString(score);
+                Toast.makeText(getApplicationContext(), "틀렸습니다\nCurrent Score: " + val, Toast.LENGTH_SHORT).show();
+                return 0;
+            }
         }
-
-        for (int i = 0; i < 4; i++) {
-            realAnswer = realAnswer + val[i] * Math.pow(10, val.length - (i + 1));
-
-        }
-        return (int) realAnswer;
-    };
+    }
 
 }
