@@ -20,6 +20,10 @@ public class Level1Activity extends MemorizationGame{
     private int score = 0;
 
     @Override
+    public void onBackPressed(){
+        Toast.makeText(getApplicationContext(),"게임 중에는 나갈 수 없습니다 ",Toast.LENGTH_SHORT).show();
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -28,6 +32,7 @@ public class Level1Activity extends MemorizationGame{
         textView = (TextView) findViewById(R.id.textView);
         editText = (EditText) findViewById(R.id.editText);
 
+
         realAnswer = makeRandomText(3);
         textView.setText(Integer.toString(realAnswer));
         mHandler = new Handler();
@@ -35,19 +40,19 @@ public class Level1Activity extends MemorizationGame{
         mHandler.sendEmptyMessage(0);
 
         mHandler.postDelayed(runnable,2000);
-        mHandler.postDelayed(runnable2,5000);
+        mHandler.postDelayed(runnable2,6000);
 
-        mHandler.postDelayed(runnable,7000);
-        mHandler.postDelayed(runnable2,11000);
+        mHandler.postDelayed(runnable,8000);
+        mHandler.postDelayed(runnable2,12000);
 
-        mHandler.postDelayed(runnable,13000);
-        mHandler.postDelayed(runnable2,17000);
+        mHandler.postDelayed(runnable,14000);
+        mHandler.postDelayed(runnable2,18000);
 
-        mHandler.postDelayed(runnable,19000);
-        mHandler.postDelayed(runnable2,23000);
+        mHandler.postDelayed(runnable,20000);
+        mHandler.postDelayed(runnable2,24000);
 
-        mHandler.postDelayed(runnable,25000);
-        mHandler.postDelayed(runnable3,29000);
+        mHandler.postDelayed(runnable,26000);
+        mHandler.postDelayed(runnable3,30000);
 
     };
 

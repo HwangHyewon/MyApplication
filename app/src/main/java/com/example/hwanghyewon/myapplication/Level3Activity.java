@@ -20,10 +20,15 @@ public class Level3Activity extends MemorizationGame{
     private int score = 10;
 
     @Override
+    public void onBackPressed(){
+        Toast.makeText(getApplicationContext(),"게임 중에는 나갈 수 없습니다 ",Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level1);
+        setContentView(R.layout.activity_level3);
 
         textView = (TextView) findViewById(R.id.textView);
         editText = (EditText) findViewById(R.id.editText);
