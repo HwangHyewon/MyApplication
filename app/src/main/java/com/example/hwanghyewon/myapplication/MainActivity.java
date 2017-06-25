@@ -1,16 +1,13 @@
 package com.example.hwanghyewon.myapplication;
 
-import android.app.LauncherActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.LauncherApps;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,5 +44,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent); // 다음 화면으로 넘어간다
             }
         });
-    } // end onCreate()
+    }
 }

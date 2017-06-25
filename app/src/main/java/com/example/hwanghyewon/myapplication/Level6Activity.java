@@ -14,34 +14,24 @@ import static android.graphics.Color.BLACK;
 import static android.graphics.Color.WHITE;
 
 public class Level6Activity extends MemorizationGame{
-
     private TextView textView;
     private EditText editText;
     private Handler mHandler;
+
     private int realAnswer;
-    private int answer;
-    private int score = 25;
+    public static int level = 6;
+
+    public Level6Activity(){
+        super(level);
+    }
+
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event){
-        switch(keyCode){
-            case KeyEvent.KEYCODE_BACK:
-                new AlertDialog.Builder(this)
-                        .setTitle("종료")
-                        .setMessage("홈 화면으로 돌아갑니다\n종료하시겠습니까?")
-                        .setPositiveButton("예",new DialogInterface.OnClickListener(){
-                            public void onClick(DialogInterface dialog, int whichButton){
-                                Intent intent2 = new Intent(
-                                        getApplicationContext(),
-                                        ButtonActivity.class); // 다음 넘어갈 클래스 지정
-                                intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                startActivity(intent2);
-                            }
-                        })
-                        .setNegativeButton("아니오",null).show();
-                return false;
-            default:
-                return false;
-        }
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        return super.onKeyDown(keyCode, event);
+    }
+    @Override
+    public int compareAnswer(int realAnswer, EditText editText){
+        return super.compareAnswer(realAnswer, editText);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,24 +45,33 @@ public class Level6Activity extends MemorizationGame{
         realAnswer = makeRandomText(10);
         textView.setText(Integer.toString(realAnswer));
         mHandler = new Handler();
-
         mHandler.sendEmptyMessage(0);
 
-        mHandler.postDelayed(runnable,3500);
-        mHandler.postDelayed(runnable2,8000);
-
-        mHandler.postDelayed(runnable,11000);
-        mHandler.postDelayed(runnable2,15000);
-
-        mHandler.postDelayed(runnable,18000);
-        mHandler.postDelayed(runnable2,22000);
-
-        mHandler.postDelayed(runnable,25000);
-        mHandler.postDelayed(runnable2,29000);
-
-        mHandler.postDelayed(runnable,32000);
-        mHandler.postDelayed(runnable3,36000);
+        start();
     };
+
+    public void start(){
+        //if(!stopRun) {
+        mHandler.postDelayed(runnable, 1500);
+        mHandler.postDelayed(runnable2, 6000);
+        //}
+        //if(!stopRun) {
+        mHandler.postDelayed(runnable, 7000);
+        mHandler.postDelayed(runnable2, 11000);
+        //}
+        //if(!stopRun) {
+        mHandler.postDelayed(runnable, 12000);
+        mHandler.postDelayed(runnable2, 16000);
+        //}
+        //if(!stopRun) {
+        mHandler.postDelayed(runnable, 17000);
+        mHandler.postDelayed(runnable2, 21000);
+        //}
+        //else if(!stopRun){
+        mHandler.postDelayed(runnable, 22000);
+        mHandler.postDelayed(runnable3, 26000);
+        //}
+    }
 
     Runnable runnable = new Runnable() {
         @Override
@@ -84,7 +83,7 @@ public class Level6Activity extends MemorizationGame{
     Runnable runnable2 = new Runnable() {
         @Override
         public void run() {
-            compareAnswer(6);
+            compareAnswer(realAnswer,editText);
             realAnswer = makeRandomText(10);
             textView.setText(Integer.toString(realAnswer));
             textView.setTextColor(BLACK);
@@ -94,9 +93,9 @@ public class Level6Activity extends MemorizationGame{
     Runnable runnable3 = new Runnable() {
         @Override
         public void run() {
-            compareAnswer(6);
+            compareAnswer(realAnswer,editText);
 
-            if(score<30){
+            if(score<(level*6)){
                 String val = Integer.toString(score);
                 Toast.makeText(getApplicationContext(),"L O S E!Your Score: " + val,Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(
@@ -111,25 +110,4 @@ public class Level6Activity extends MemorizationGame{
             }
         }
     };
-
-    public int compareAnswer(int level) {
-        if (editText.getText().toString().equals("")) {
-            Toast.makeText(getApplicationContext(), "입력시간이 지났습니다", Toast.LENGTH_SHORT).show();
-            return 0;
-        } else {
-            answer = Integer.parseInt(editText.getText().toString());
-            if (answer == realAnswer) {
-                score++;
-                if (score != level * 5) {
-                    String val = Integer.toString(score);
-                    Toast.makeText(getApplicationContext(), "맞았습니다\nCurrent Score: " + val, Toast.LENGTH_SHORT).show();
-                }
-                return 1;
-            } else {
-                String val = Integer.toString(score);
-                Toast.makeText(getApplicationContext(), "틀렸습니다\nCurrent Score: " + val, Toast.LENGTH_SHORT).show();
-                return 0;
-            }
-        }
-    }
 }

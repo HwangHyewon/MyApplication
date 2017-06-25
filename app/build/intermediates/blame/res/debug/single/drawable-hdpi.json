@@ -58,5 +58,9 @@
     {
         "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\num9.png",
         "source": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\src\\main\\res\\drawable-hdpi\\num9.png"
+    },
+    {
+        "merged": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\main.png",
+        "source": "C:\\Users\\Hwang Hyewon\\git\\TermProject\\MyApplication\\app\\src\\main\\res\\drawable-hdpi\\main.png"
     }
 ]
