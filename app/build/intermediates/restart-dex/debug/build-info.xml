@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="24"
     build-mode="COLD"
-    density="420dpi"
+    density="xxhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1498374918363"
+    timestamp="1498394700744"
     token="1389397321432228040"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="5445" />
+        duration="781" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="2104" />
+        duration="422" />
     <task
         name="verifier"
-        duration="214" />
+        duration="144" />
 
     <artifact
         location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1498322188408"
+        timestamp="1498386045925"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -76,17 +70,27 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1498374918363"
+        timestamp="1498386479629"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1498387497120"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1498394700744"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Hwang Hyewon\git\TermProject\MyApplication\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

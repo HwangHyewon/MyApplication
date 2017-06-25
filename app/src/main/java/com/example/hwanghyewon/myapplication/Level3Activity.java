@@ -1,8 +1,12 @@
 package com.example.hwanghyewon.myapplication;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.view.Gravity;
+import android.view.KeyEvent;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,10 +24,27 @@ public class Level3Activity extends MemorizationGame{
     private int score = 10;
 
     @Override
-    public void onBackPressed(){
-        Toast.makeText(getApplicationContext(),"게임 중에는 나갈 수 없습니다 ",Toast.LENGTH_SHORT).show();
+    public boolean onKeyDown(int keyCode, KeyEvent event){
+        switch(keyCode){
+            case KeyEvent.KEYCODE_BACK:
+                new AlertDialog.Builder(this)
+                        .setTitle("종료")
+                        .setMessage("홈 화면으로 돌아갑니다\n종료하시겠습니까?")
+                        .setPositiveButton("예",new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int whichButton){
+                                Intent intent2 = new Intent(
+                                        getApplicationContext(),
+                                        ButtonActivity.class); // 다음 넘어갈 클래스 지정
+                                intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                startActivity(intent2);
+                            }
+                        })
+                        .setNegativeButton("아니오",null).show();
+                return false;
+            default:
+                return false;
+        }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -39,20 +60,20 @@ public class Level3Activity extends MemorizationGame{
 
         mHandler.sendEmptyMessage(0);
 
-        mHandler.postDelayed(runnable,3000);
+        mHandler.postDelayed(runnable,2500);
         mHandler.postDelayed(runnable2,8000);
 
-        mHandler.postDelayed(runnable,11000);
-        mHandler.postDelayed(runnable2,16000);
+        mHandler.postDelayed(runnable,10000);
+        mHandler.postDelayed(runnable2,15000);
 
-        mHandler.postDelayed(runnable,19000);
-        mHandler.postDelayed(runnable2,24000);
+        mHandler.postDelayed(runnable,17000);
+        mHandler.postDelayed(runnable2,22000);
 
-        mHandler.postDelayed(runnable,27000);
-        mHandler.postDelayed(runnable2,32000);
+        mHandler.postDelayed(runnable,24000);
+        mHandler.postDelayed(runnable2,29000);
 
-        mHandler.postDelayed(runnable,34000);
-        mHandler.postDelayed(runnable3,38000);
+        mHandler.postDelayed(runnable,31000);
+        mHandler.postDelayed(runnable3,36000);
 
     };
 
@@ -80,11 +101,12 @@ public class Level3Activity extends MemorizationGame{
 
             if(score<15){
                 String val = Integer.toString(score);
-                Toast.makeText(getApplicationContext(),"L O S E!\nYour Score: "+val,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(
+                Toast.makeText(getApplicationContext(),"L O S E!Your Score: " + val,Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(
                         getApplicationContext(),
                         ButtonActivity.class); // 다음 넘어갈 클래스 지정
-                startActivity(intent);
+                intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent2);
             }
             else{
                 String val = Integer.toString(score);
